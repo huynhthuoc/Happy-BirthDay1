@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(70, 221, 255);
+    background-image: url(./img/vatar\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+    transform: translateY(100px);
+    background-color: transparent;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+span {
+    color: rgb(216, 136, 136)
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgba(70, 221, 255, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all ease-in;
+    animation: pdemo ease-in infinite 3s;
+}
+
+@keyframes pdemo {
+    0% {
+        transform: scale(0.95);
+        font-size: 23px;
+    }
+
+    25% {
+        transform: scale(1);
+        font-size: 20px;
+    }
+
+    50% {
+        transform: scale(0.95);
+        font-size: 23px;
+    }
+
+    75% {
+        transform: scale(1);
+        font-size: 20px;
+    }
+
+    100% {
+        transform: scale(0.95);
+        font-size: 23px;
+    }
+
+}
+
+#demo:after {
+    content: 'Seconds';
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(70, 221, 255, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#demo1::after {
+    content: 'Minutes';
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(70, 221, 255, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#demo2::after {
+    content: 'Hours';
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(70, 221, 255, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#demo3::after {
+    content: 'Days';
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(70, 221, 255, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    transform: translateY(-100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(70, 221, 255, 0.678);
+    animation: demo ease-in infinite 3s;
+    transition: all ease-in;
+}
+
+@keyframes demo {
+    0% {
+        transform: translateY(-140%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(-130%);
+    }
+
+    75% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(-140%);
+    }
+
+}
+
+/* //djsakldsa */
