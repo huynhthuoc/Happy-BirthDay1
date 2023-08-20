@@ -1,16 +1,14 @@
+const pElements = document.querySelectorAll('p')
 
-setInterval(displayHello, 1000);
-function displayHello() {
-    let ngayhientai = new Date();
-    let ngaysinhnhat = new Date(2023, 05, 09, 23, 59, 59, 00); // ngày sinh nhật
-    let refult = ngaysinhnhat - ngayhientai;
-    let refultgiay = refult / 1000;
-    let refultphut = refultgiay / 60;
-    let refultgio = refultphut / 60;
-    let refultday = refultgio / 24;
-
-    document.getElementById('demo').innerHTML = Math.round(refultgiay);
-    document.getElementById('demo1').innerHTML = Math.round(refultphut);
-    document.getElementById('demo2').innerHTML = Math.round(refultgio);
-    document.getElementById('demo3').innerHTML = Math.round(refultday);
+const date = new Date(2023, 08, 23, 24, 2, 60)
+const updateTimes = setInterval(displayTimer, 0)
+function displayTimer() {
+    date.setSeconds(date.getSeconds() - 1)
+    pElements[0].innerHTML = date.getDay().toString().padStart(2, '0');
+    pElements[1].innerHTML = date.getHours().toString().padStart(2, '0');
+    pElements[2].innerHTML = date.getMinutes().toString().padStart(2, '0');
+    pElements[3].innerHTML = date.getSeconds().toString().padStart(2, '0');
+    if (date.getMinutes() === 0 && date.getSeconds() === 0) {
+        clearInterval(updateTimes)
+    }
 }
