@@ -1,6 +1,6 @@
 const pElements = document.querySelectorAll('p')
 
-const date = new Date(2023, 08, 23, 24, 2, 60)
+const date = new Date(2024, 06, 09, 23, 59, 59)
 const updateTimes = setInterval(displayTimer, 0)
 function displayTimer() {
     date.setSeconds(date.getSeconds() - 1)
