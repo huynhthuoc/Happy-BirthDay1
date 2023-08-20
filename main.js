@@ -1,7 +1,7 @@
 const pElements = document.querySelectorAll('p')
 
 const date = new Date(2024, 06, 09, 23, 59, 59)
-const updateTimes = setInterval(displayTimer, 0)
+const updateTimes = setInterval(displayTimer, 1000)
 function displayTimer() {
     date.setSeconds(date.getSeconds() - 1)
     pElements[0].innerHTML = date.getDay().toString().padStart(2, '0');
