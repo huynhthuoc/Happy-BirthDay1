@@ -1,5 +1,5 @@
 const pElements = document.querySelectorAll('p')
-const birthday = new Date(2024, 03, 16, 23, 59, 59)
+const birthday = new Date(2025, 03, 16, 23, 59, 59)
 
 const updateTimes = setInterval(displayTimer, 2)
 function displayTimer() {
