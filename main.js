@@ -6,10 +6,8 @@ function displayTimer() {
     const now = Date.now()
     const distance = birthday - now;
     pElements[0].innerHTML =
-
-        'sssssssssss'
-        //Math.floor(distance / (1000 * 60 * 60 * 24))
-           // .toString().padStart(2, '0');
+        Math.floor(distance / (1000 * 60 * 60 * 24))
+            .toString().padStart(2, '0');
     pElements[1].innerHTML =
         Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
             .toString().padStart(2, '0');
